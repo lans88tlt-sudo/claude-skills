@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Звук на всех вкладках",
+  "version": "1.0",
+  "description": "Включает звук на всех вкладках. Кнопка или Alt+Shift+M.",
+  "permissions": ["tabs"],
+  "background": { "service_worker": "bg.js" },
+  "action": { "default_title": "Включить звук на всех вкладках" },
+  "commands": {
+    "unmute-all": {
+      "suggested_key": { "default": "Alt+Shift+M" },
+      "description": "Включить звук на всех вкладках"
+    }
+  }
+}
